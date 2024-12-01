@@ -18,6 +18,7 @@ jobs:
           git checkout master
           git branch --set-upstream-to=origin/master
           git pull
+          pip install pytest
           pytest >> log_pytest.txt
           ls -a
           git add .
